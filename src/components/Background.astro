@@ -1,0 +1,16 @@
+---
+import Button from '@components/ui/Button.astro';
+import Skill from '@components/ui/skill.astro';
+---
+
+<section
+	data-testid="skill"
+	id="skill"
+	class="mb-20 flex flex-col flex-wrap items-center justify-center gap-8 text-black dark:text-white lg:mb-5 lg:h-screen"
+>
+	<h2 class="font-pixel2 text-2xl text-orange lg:text-4xl">Background Skill</h2>
+	<hr class="w-1/2" />
+	<div class="flex flex-col grid grid-cols-4 gap-8 lg:grid-cols-6 lg:gap-20">
+		<Skill />
+	</div>
+</section>

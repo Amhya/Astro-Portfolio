@@ -1,0 +1,71 @@
+---
+import "aos/dist/aos.css"; // AOS styles
+import "global.css"
+---
+
+<section
+	data-testid="about"
+	id="about"
+	class="mb-10 flex flex-col items-center justify-center lg:mb-0 lg:h-screen lg:flex-row"
+>
+	<div class="mb-10 flex w-full flex-col items-center justify-center lg:mb-0 lg:w-1/2" data-aos="fade-right">
+		<h2 class="font-pixel2 text-2xl text-orange lg:text-4xl">About me</h2>
+		
+		<span class="mb-6 ml-2 h-1 w-10 bg-orange"></span>
+	</div>
+	
+	
+
+	<div  class="w-full text-justify text-md text-black dark:text-white lg:text-xl lg:w-1/2" >
+		<p  class="mb-2 font-pixel2">
+			Greetings visitor, you can ask me a question if you wan to know me ^-^ .<br>
+			<span class="text-md text-orange dark:text-orange">Choose your question...</span>
+		</p>
+
+		<section class="accordion">
+			<input type="checkbox" name="collapse2" id="handle1">
+			<h2 class="handle">
+			  <label for="handle1" class="font-pixel2">Tell me about yourself</label>
+			</h2>
+			<div class="content font-pixel2">
+			  <p> Hi.. I'm Ernesto Esguerra, a BSIT student trying to fix error and bugs all the time.
+				Hope someday I can be a Graphic designer or any jobs required in arts and creativity
+			  </p>
+			</div>
+		  </section>
+
+		  <section class="accordion">
+			<input type="checkbox" name="collapse2" id="handle2">
+			<h2 class="handle">
+			  <label for="handle2" class="font-pixel2">Tell me about your Education</label>
+			</h2>
+			<div class="content font-pixel2">
+			  <p> I'm a BSIT Student in PHINMA AU, Doing well in academic in my opinion.
+				I excel in creative activity or art. I recieve some award in my academic phase.
+				Currently I'm knowlegable in Frontend, laravel, php, javascript and css
+			  </p>
+			</div>
+		  </section>
+
+		  <section class="accordion">
+			<input type="checkbox" name="collapse2" id="handle3">
+			<h2 class="handle">
+			  <label for="handle3" class="font-pixel2">Any Hobby?</label>
+			</h2>
+			<div class="content font-pixel2">
+			  <p> Like to draw, watch movie or series (anime), I like doing laundry
+				and cleaning. Expert in making kimbap, kimchi soup and Ramen.
+			  </p>
+			</div>
+		  </section>
+
+	</div>
+</section>
+
+<script>
+    import { aosInit } from "main";
+
+    // runs on initial page load
+    aosInit();
+  </script>
+  
