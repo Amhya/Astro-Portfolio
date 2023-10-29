@@ -10,6 +10,7 @@ export default defineConfig({
   experimental: {
     assets: true,
   },
+  outDir: './dist',
   output: 'server',
   adapter: vercel(),
  
